@@ -1,0 +1,261 @@
+*{
+    font-family: 'Comfortaa', sans-serif;
+}
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #3d3d3d;
+}
+body {
+    background: #f3f3f3
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+input{
+    padding: 5px 5px;
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #c5c5c5;
+    line-height: 20px;
+    color: #444444;
+}
+/*
+    HEADER menu
+ */
+header{
+    background: #244d6e;
+    height: 75px;
+}
+header *{
+    color: #ffffff;
+}
+header h1{
+    margin-top: 12px;
+}
+header h1 a{
+    color: #ffffff;
+}
+header h1 a:hover{
+    color: #ffffff;
+}
+header ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: right;
+}
+header ul li{
+    float: left;
+    position: relative;
+}
+
+header ul li a{
+    display: block;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 20px;
+}
+header ul li a:hover{
+    background: #1f4560;
+    transition: 0.5s;
+    color:#ffffff;
+}
+header ul li ul{
+    position: absolute;
+    top: 66px;
+    right: 0;
+    width: 180px;
+    display: none;
+    z-index: 88888;
+}
+header ul li:hover ul{
+    display: block;
+}
+header ul li ul li{
+    width: 120%;
+}
+header ul li ul li a{
+    padding: 10px;
+    background: #244d6e;
+    color: #ffffff;
+}
+/*
+    Footer
+ */
+.footer{
+    background: #244d6e;
+    color: #f3f3f3;
+    position: relative;
+}
+
+.footer .footer-section{
+    padding: 15px;
+}
+.footer .footer-section.links h3{
+    margin-bottom: 0;
+}
+.footer h4, .footer h3{
+    color: #f3f3f3;
+}
+.footer .about .contact span{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.footer .about .socials a{
+    border: 1px solid gray;
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 20px;
+    transition: all .3s;
+    color: #f3f3f3;
+}
+.footer .about .socials a:hover{
+    border: 1px solid white;
+    color: white;
+    transition: all .3s;
+}
+.footer .links ul a{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 15px;
+    transition: all .3s;
+    color: #f3f3f3;
+    text-decoration: none;
+}
+.footer .links ul a:hover{
+    color: white;
+    margin-left: 5px;
+    transition: all .3s;
+}
+.footer .contact-form .contact-input{
+    background: #f3f2f2;
+    color: #000000;
+    margin-bottom: 5px;
+    line-height: 20px;
+    padding: 5px 5px;
+    border: none;
+}
+.footer .contact-form .contact-input:focus{
+    background: #ffffff;
+}
+.footer .contact-form .contact-btn{
+    float: right;
+    color: #f3f3f2;
+    font-size: 17px;
+    margin-top: 65px;
+    margin-right: 74px;
+}
+.footer .contact-form .contact-btn:hover{
+    color:white;
+    transition: all .3s;
+}
+.footer .footer-bottom{
+    text-align: left;
+}
+/*
+SIDEBAR
+ */
+.sidebar{
+    background: #306691;
+    margin: 15px 0px;
+    min-height: 650px;
+}
+
+.sidebar ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+.sidebar ul a{
+    padding: 15px;
+    display: block;
+    border-bottom: 1px solid #ffffff;
+}
+
+.sidebar ul a:hover{
+    padding-left: 5px;
+    transition: all 0.3s;
+    color: white;
+    text-decoration: none;
+}
+
+.posts{
+    height: 100%;
+    padding-top: 15px;
+    padding-left: 100px;
+    min-height: 650px;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.posts h2{
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.posts .title-table{
+    font-weight: 900;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+
+.posts .all-posts{
+    overflow: scroll;
+    max-height: 490px;
+}
+
+.posts .post div{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: left;
+    border-bottom: 2px solid black;
+}
+
+.posts .post .red{
+    color: mediumblue;
+}
+
+.posts .post .del{
+    color: red;
+}
+
+.posts .post .id{
+    font-weight: 900;
+}
+
+.add-posts form div{
+    margin-top: 20px;
+}
+.add-posts form .text-content{
+}
+.add-posts form .text-content div{
+    margin-top: 0 !important;
+}
+.posts .err{
+    font-size: 17px;
+    font-weight: 900;
+    margin-top: 15px;
+    margin-bottom: 0;
+    text-align: center;
+    font-style: italic;
+    color:red;
+    text-decoration: 2px underline;
+}
