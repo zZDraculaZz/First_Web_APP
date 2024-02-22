@@ -4,7 +4,7 @@ class SQLiteDB implements DBInterface
 {
     public static $instance = null;
     private SQLite3 $db;
-    public function __construct($db_name)
+    private function __construct($db_name)
     {
         $this->db = new SQLite3($db_name, SQLITE3_OPEN_CREATE | SQLITE3_OPEN_READWRITE);
         $this->db->query
